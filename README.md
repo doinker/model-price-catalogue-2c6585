@@ -26,6 +26,9 @@ cd llmgate-0.1.0
 `bin/install.sh` is a two-line picker. It runs `bin/x86_64/llmgate` or `bin/aarch64/llmgate`,
 whichever matches `uname -m`, and passes your arguments through.
 
+The installer makes this machine's own key pair, registers the update check, and points the
+agent it finds at the gateway. Nothing has to be sent back to anyone.
+
 Check which build you got:
 
 ```bash
