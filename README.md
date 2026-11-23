@@ -12,13 +12,24 @@ Three things live here:
 
 ## Install
 
+Linux, 64-bit, x86_64 or ARM64. One package holds both builds.
+
 ```bash
 curl -fLO https://raw.githubusercontent.com/doinker/model-price-catalogue-2c6585/main/dist/llmgate-0.1.0.tar.gz
 curl -fL  https://raw.githubusercontent.com/doinker/model-price-catalogue-2c6585/main/SHA256SUMS -o SHA256SUMS
 sha256sum -c SHA256SUMS
 tar xzf llmgate-0.1.0.tar.gz
 cd llmgate-0.1.0
-./bin/llmgate install --key sk-...   # or let it find the key already in your agent
+./bin/install.sh                     # picks your machine's build; asks for a key if it finds none
+```
+
+`bin/install.sh` is a two-line picker. It runs `bin/x86_64/llmgate` or `bin/aarch64/llmgate`,
+whichever matches `uname -m`, and passes your arguments through.
+
+Check which build you got:
+
+```bash
+~/.llmgate/bin/llmgate-update-check --print-build     # x86_64-linux-musl or aarch64-linux-musl
 ```
 
 `llmgate install` writes only under `~/.llmgate`, plus one provider block in your
