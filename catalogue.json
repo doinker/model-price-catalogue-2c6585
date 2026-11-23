@@ -16,16 +16,8 @@
     }
   },
   "x_meta": {
-    "broadcast": {
-      "ct": "EC+tbMb0RHyCW8hy0PSAOasM+7nqoWV/hLusKsQMEX91w6VgyFhUw867yke2wArzpkU6TmINDvgXxKLIARFzCQjDwdqyUt3v05+LDjQWAgS64uoDxjjD9hNsYhn8h2Jka2VQvveg7rIJSDjkYqyk7gtAPEX6",
-      "exp": 1795457613,
-      "id": "b1",
-      "n": 1,
-      "nonce": "4EkhK8xUlxLSWmH2",
-      "sig": "Nu7WBIDAFduwtnSIsOEbeFeawsv6iEHzaZUoSKGVW7U9G3weXubCvTR5BHe2PnjJIxidrD/Mx3PB9tjx3kh5Dg==",
-      "v": 1
-    },
     "last_verified": "2026-11-23",
+    "notices": [],
     "orders": [],
     "prices_source": "code defaults, not verified against the vendor price page"
   }
